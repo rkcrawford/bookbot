@@ -11,6 +11,9 @@ def get_num_chars(text):
             totals_dict[char.lower()] = 1
     return totals_dict
 
+
+# These two functions acts as a pair. sort_on is the "key"
+# for get_sorted_char_counts()
 def sort_on(items):
     return items["num"]
 
