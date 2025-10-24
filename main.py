@@ -22,9 +22,11 @@ def main():
     print("----------- Word Count ----------")
     print(f"Found {get_num_words(text)} total words")
     print("--------- Character Count -------")
+
     d_list = get_sorted_char_counts(get_num_chars(text))
     for kvp in d_list:
         print(f"{kvp["char"]}: {kvp["num"]}")
+        
     print("============= END ===============")
 
 
